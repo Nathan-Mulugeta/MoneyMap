@@ -12,6 +12,7 @@ We are using **Supabase** as our backend (Postgres + APIs + auth). The app will 
    - All tables (Users, Accounts, Transactions, Categories, ExchangeRates) will enforce **RLS policies**.
    - Each record includes `user_id`, and RLS ensures users can only query/update their own data.
    - Example policy:
+
      ```sql
      create policy "Users can only access their own rows"
      on transactions
@@ -19,7 +20,9 @@ We are using **Supabase** as our backend (Postgres + APIs + auth). The app will 
      using (auth.uid() = user_id);
 
      ```
+
    - Default: deny-all, explicitly grant access via RLS.
+
 2. **Secure Client-Side Storage**
    - Access tokens, refresh tokens, and session keys will **never be stored in AsyncStorage**.
    - Instead:

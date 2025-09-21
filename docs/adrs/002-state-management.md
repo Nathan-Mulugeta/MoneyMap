@@ -73,11 +73,11 @@ UI does not import Supabase directly; it calls domain use cases/hooks that rely 
 
 ```tsx
 // app/providers/QueryProvider.tsx
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { persistQueryClient } from "@tanstack/query-persist-client-core";
-import { createAsyncStoragePersister } from "@tanstack/query-async-storage-persister";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-import { useMemo } from "react";
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import { persistQueryClient } from '@tanstack/query-persist-client-core';
+import { createAsyncStoragePersister } from '@tanstack/query-async-storage-persister';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+import { useMemo } from 'react';
 
 export function AppQueryProvider({ children }: { children: React.ReactNode }) {
   const client = useMemo(

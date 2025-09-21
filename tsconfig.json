@@ -1,18 +1,18 @@
 {
-    "compilerOptions": {
-      "target": "ESNext",
-      "module": "ESNext",
-      "lib": ["ESNext", "DOM"],
-      "moduleResolution": "Node",
-      "esModuleInterop": true,
-      "forceConsistentCasingInFileNames": true,
-      "skipLibCheck": true,
-      "strict": true,
-      "noImplicitAny": true,
-      "baseUrl": ".",
-      "paths": {
-        "@finance/*": ["packages/*/src"]
-      }
-    },
-    "exclude": ["node_modules", "dist", "build"]
-  }
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "baseUrl": ".",
+    "paths": {
+      "@finance/*": ["packages/*/src"]
+    }
+  },
+  "exclude": ["node_modules", "dist", "build"]
+}

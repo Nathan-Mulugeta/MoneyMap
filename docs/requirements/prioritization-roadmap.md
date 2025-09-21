@@ -3,7 +3,6 @@
 ## Feature Prioritization
 
 - **MVP (Phase 1):**
-
   - Quick logging (FR1)
   - Search (FR2)
   - Android widget (FR3)
@@ -15,7 +14,6 @@
   - Savings tracker (FR9)
 
 - **Phase 2:**
-
   - Receipt parsing (FR8)
   - Debt & loan tracking (FR11)
   - Export to Excel (FR13)
